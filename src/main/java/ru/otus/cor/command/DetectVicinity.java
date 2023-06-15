@@ -22,7 +22,7 @@ public class DetectVicinity implements Command {
     @Override
     public void execute(GameField gameField) {
         List<Vicinity> vicinities = gameField.getVicinities();
-        List<GameObject> gameObjects = gameField.getGameObjects();
+        List<GameObject> gameObjects = gameField.getAllGameObjects();
 
         for (GameObject gameObject : gameObjects) {
             // находим область, в которой находится объект

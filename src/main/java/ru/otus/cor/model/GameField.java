@@ -16,6 +16,6 @@ public class GameField {
 
     private int size;
     private List<Vicinity> vicinities;
-    private List<GameObject> gameObjects;
+    private List<GameObject> allGameObjects;
 
 }

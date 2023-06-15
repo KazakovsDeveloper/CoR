@@ -15,7 +15,8 @@ public class MoveVicinity implements Command {
     @Override
     public void execute(GameField gameField) {
         // фильтруем те объекты, которые нужно переместить
-        List<GameObject> filteredGameObjects = gameField.getGameObjects().stream()
+        List<GameObject> filteredGameObjects = gameField.getAllGameObjects()
+                .stream()
                 .filter(GameObject::isNeedToMove)
                 .toList();
         // добавляем объекты в новые окрестности
